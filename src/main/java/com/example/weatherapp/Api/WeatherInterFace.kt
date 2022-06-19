@@ -24,7 +24,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface WeatherInterFace {
-    @GET("v1/Api_KEY")
+    @GET("v1/forecast.json?key=79996c488e254729994125159221606&q=cologne&days=1&aqi=no&alerts=no\n")
     fun getForecast(): Call<KolnWeather>
 
 }
